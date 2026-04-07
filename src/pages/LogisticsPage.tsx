@@ -13,7 +13,7 @@ import logoOcho43 from '@/assets/logo-ocho43.jpg';
 import logoPatriciaMejia from '@/assets/logo-patricia-mejia.png';
 import logoArgemiroSierra from '@/assets/logo-argemiro-sierra.png';
 import fridaLogo from '@/assets/frida-logo.png';
-
+/**holaaa */
 
 // Fashion photos
 import fashionCraftsman from '@/assets/fashion-craftsman.jpg';
