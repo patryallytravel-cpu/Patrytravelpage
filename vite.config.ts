@@ -9,7 +9,30 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [
+    react(),
+    mode === "development" && componentTagger(),
+    // SPA fallback plugin
+    {
+      name: "spa-fallback",
+      configureServer(server) {
+        return () => {
+          server.middlewares.use((req, res, next) => {
+            if (
+              req.method === "GET" &&
+              req.url !== "/" &&
+              !req.url.includes(".") &&
+              !req.url.includes("/api") &&
+              !req.url.includes("/@")
+            ) {
+              req.url = "/index.html";
+            }
+            next();
+          });
+        };
+      },
+    },
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
