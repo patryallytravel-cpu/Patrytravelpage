@@ -12,6 +12,8 @@ import privateTransport from '@/assets/private-transport.jpg';
 import logoOcho43 from '@/assets/logo-ocho43.jpg';
 import logoPatriciaMejia from '@/assets/logo-patricia-mejia.png';
 import logoArgemiroSierra from '@/assets/logo-argemiro-sierra.png';
+import fridaLogo from '@/assets/frida-logo.png';
+
 
 // Fashion photos
 import fashionCraftsman from '@/assets/fashion-craftsman.jpg';
@@ -40,6 +42,7 @@ const LogisticsPage = () => {
     { src: logoOcho43, alt: 'Ocho43 Tienda de Diseño', needsBg: false },
     { src: logoPatriciaMejia, alt: 'Patricia Mejía Diseñadora de Zapatos', needsBg: true },
     { src: logoArgemiroSierra, alt: 'Argemiro Sierra', needsBg: false },
+    { src: fridaLogo, alt: 'Frida', needsBg: false },
   ];
 
   const occasions = [

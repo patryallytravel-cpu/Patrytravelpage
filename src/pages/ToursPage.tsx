@@ -21,6 +21,7 @@ import paraglidingImage from '@/assets/paragliding-tour.png';
 import orienteImage from '@/assets/oriente-tour.png';
 import cityTourImage from '@/assets/city-tour.png';
 
+
 const ToursPage = () => {
   const { t } = useLanguage();
 

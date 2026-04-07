@@ -14,6 +14,7 @@ import logoHematologico from '@/assets/logo-hematologico.png';
 import logoAltaEstetica from '@/assets/logo-alta-estetica-dental.png';
 import logoSantaLucia from '@/assets/logo-santa-lucia.png';
 import logoOftalmologica from '@/assets/logo-clinica-oftalmologica.png';
+import logoSura from '@/assets/logo-sura.png';
 
 const MedicinePage = () => {
   const { t } = useLanguage();
@@ -303,6 +304,7 @@ const MedicinePage = () => {
               { src: logoAltaEstetica, alt: 'Alta Estética Dental' },
               { src: logoSantaLucia, alt: 'Santa Lucía - Cuidamos tus sentidos' },
               { src: logoOftalmologica, alt: 'Clínica Oftalmológica de Medellín' },
+              { src: logoSura, alt: 'Clínica Sura' },
             ].map((ally, i) => (
               <img
                 key={i}
