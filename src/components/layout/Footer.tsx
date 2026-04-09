@@ -169,7 +169,7 @@ const Footer = () => {
                 className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
                 
                 <Smartphone className="h-5 w-5" />
-                @patryally
+                @patryally tik tok
               </a>
              
              
