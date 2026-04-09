@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, MapPin } from 'lucide-react';
+import { Instagram, Mail, MapPin, Linkedin, Facebook, Smartphone } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -153,6 +153,36 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
                 @patryally
               </a>
+              <a
+                href="https://www.linkedin.com/in/mariaparango"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
+                
+                <Linkedin className="h-5 w-5" />
+                Maria Parango
+              </a>
+              <a
+                href="https://www.tiktok.com/@patryally"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
+                
+                <Smartphone className="h-5 w-5" />
+                @patryally
+              </a>
+             
+             
+              <a
+                href="https://wa.me/573006247456"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors">
+                
+                <Smartphone className="h-5 w-5" />
+                +57 300 624 7456
+              </a>
+
               <div className="flex items-center gap-3 text-background/70">
                 <MapPin className="h-5 w-5" />
                 Medellín, Colombia

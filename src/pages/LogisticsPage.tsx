@@ -10,9 +10,11 @@ import souvenirBag from '@/assets/souvenir-bag.jpg';
 import celebrationToast from '@/assets/celebration-toast.jpg';
 import privateTransport from '@/assets/private-transport.jpg';
 import logoOcho43 from '@/assets/logo-ocho43.jpg';
-import logoPatriciaMejia from '@/assets/logo-patricia-mejia.png';
+import logoPatriciaMejia2 from '@/assets/logo-patricia-mejia.png';
+import logoPatriciaMejia from '@/assets/LOGO NEGRO PATRICIA MEJIA DISEÑADORA DE ZAPATOS.png';
 import logoArgemiroSierra from '@/assets/logo-argemiro-sierra.png';
 import fridaLogo from '@/assets/frida-logo.png';
+
 /**holaaddda */
 
 // Fashion photos
@@ -40,7 +42,7 @@ const LogisticsPage = () => {
 
   const collaborators = [
     { src: logoOcho43, alt: 'Ocho43 Tienda de Diseño', needsBg: false },
-    { src: logoPatriciaMejia, alt: 'Patricia Mejía Diseñadora de Zapatos', needsBg: true },
+    { src: logoPatriciaMejia, alt: 'Patricia Mejía Diseñadora de Zapatos', needsBg: false },
     { src: logoArgemiroSierra, alt: 'Argemiro Sierra', needsBg: false },
     { src: fridaLogo, alt: 'Frida', needsBg: false },
   ];
