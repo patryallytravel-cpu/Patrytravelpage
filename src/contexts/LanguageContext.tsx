@@ -195,6 +195,14 @@ const translations: Record<Language, Record<string, string>> = {
     'health.dental.proc3': 'Carillas de Porcelana',
     'health.dental.proc4': 'Rehabilitación Oral Completa',
 
+    'health.masvida': 'Atencion personalizada de pacientes en domicilio y clínicas',
+    'health.masvida.desc': 'Brindamos un servicio integral de salud centrado en el bienestar y recuperación del paciente, con atención de alto nivel en cada etapa del proceso.',
+    'health.masvida.proc1': 'Atención médica domiciliaria y Tele orientación de alto nivel para procesos de recuperación.',
+    'health.masvida.proc2': 'Atención integral en terapias de recuperación y acondicionamiento funcional.',
+    'health.masvida.proc3': 'Atención Premium en manejo de aplicación de medicamentos pre y post procedimientos.',
+    'health.masvida.proc4': 'Disponibilidad de equipos médicos para recuperación y cuidado integral.',
+
+
     'health.cta.consult': 'Consultar Especialista',
 
     'health.alliances.label': 'Red Institucional',
@@ -316,7 +324,7 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.includes.insurance': 'Tarjetas de asistencia médica',
     
     'pricing.hotels.title': 'Opciones de Hospedaje',
-    'pricing.hotels.perNight': 'Precios por noche (2 personas)',
+    'pricing.hotels.perNight': 'Paquete de 7 noches',
     'pricing.table.night': 'noche',
     'pricing.calculator.title': 'Calculadora de Precios',
     'pricing.calculator.subtitle': 'Obtén un estimado según tus fechas',
@@ -692,6 +700,13 @@ const translations: Record<Language, Record<string, string>> = {
     'health.exec.biuman.title': 'BIUMAN Sports Medicine',
     'health.exec.biuman.desc': 'Specialized program in biomechanical evaluation, injury prevention, and sports performance optimization with motion analysis technology.',
 
+    'health.masvida': 'Personalized patient care at home and in clinics',
+    'health.masvida.desc': 'We provide comprehensive health services focused on patient wellbeing and recovery, with high-level care at every stage of the process.',
+    'health.masvida.proc1': 'High-Level Home Medical Care and Tele-Consultation for recovery processes.',
+    'health.masvida.proc2': 'Comprehensive care in recovery therapies and functional conditioning.',
+    'health.masvida.proc3': 'Premium care in the management of pre- and post-procedure medications.',
+    'health.masvida.proc4': 'Availability of medical equipment for recovery and comprehensive care.',
+
     'health.routes.title': 'Fast Diagnostic Routes',
     'health.routes.desc': 'We design efficient diagnostic routes for international executives who need complete results in limited time.',
     'health.routes.item1': 'Complete cardiovascular checkup in 4 hours',
@@ -780,7 +795,7 @@ const translations: Record<Language, Record<string, string>> = {
     'pricing.includes.insurance': 'Medical assistance cards',
     
     'pricing.hotels.title': 'Accommodation Options',
-    'pricing.hotels.perNight': 'Prices per night (2 people)',
+    'pricing.hotels.perNight': '7-nights package',
     'pricing.table.night': 'night',
     'pricing.calculator.title': 'Price Calculator',
     'pricing.calculator.subtitle': 'Get an estimate based on your dates',

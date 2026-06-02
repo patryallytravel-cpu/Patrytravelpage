@@ -16,6 +16,8 @@ import logoSantaLucia from '@/assets/logo-santa-lucia.png';
 import logoOftalmologica from '@/assets/logo-clinica-oftalmologica.png';
 import logoSura from '@/assets/logo-sura.png';
 import logoSomer from '../assets/logo-somer.png';
+import LogoMasvida from '../assets/logomasvida.png';
+import logoVumi from '../assets/logo vumi.png';
 
 const MedicinePage = () => {
   const { t } = useLanguage();
@@ -59,6 +61,12 @@ const MedicinePage = () => {
       titleKey: 'health.dental.title',
       descKey: 'health.dental.desc',
       procedures: ['health.dental.proc1', 'health.dental.proc2', 'health.dental.proc3', 'health.dental.proc4'],
+    },
+    {
+      icon: HeartPulse,
+      titleKey: 'health.masvida',
+      descKey: 'health.masvida.desc',
+      procedures: ['health.masvida.proc1', 'health.masvida.proc2', 'health.masvida.proc3', 'health.masvida.proc4'],
     },
   ];
 
@@ -307,6 +315,8 @@ const MedicinePage = () => {
               { src: logoOftalmologica, alt: 'Clínica Oftalmológica de Medellín' },
               { src: logoSura, alt: 'Clínica Sura' },
               { src: logoSomer, alt: 'Clínica Somer' },
+              { src: LogoMasvida, alt: 'Mas vida' },
+              { src: logoVumi, alt: 'Vumi Travel' },
             ].map((ally, i) => (
               <img
                 key={i}

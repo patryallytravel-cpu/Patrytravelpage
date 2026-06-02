@@ -14,6 +14,7 @@ import logoPatriciaMejia2 from '@/assets/logo-patricia-mejia.png';
 import logoPatriciaMejia from '@/assets/LOGO NEGRO PATRICIA MEJIA DISEÑADORA DE ZAPATOS.png';
 import logoArgemiroSierra from '@/assets/logo-argemiro-sierra.png';
 import fridaLogo from '@/assets/frida-logo.png';
+import logoYork from '../assets/logo york.png';
 
 /**holaaddda */
 
@@ -45,6 +46,7 @@ const LogisticsPage = () => {
     { src: logoPatriciaMejia, alt: 'Patricia Mejía Diseñadora de Zapatos', needsBg: false },
     { src: logoArgemiroSierra, alt: 'Argemiro Sierra', needsBg: false },
     { src: fridaLogo, alt: 'Frida', needsBg: false },
+    { src: logoYork, alt: 'York', needsBg: false },
   ];
 
   const occasions = [
@@ -226,21 +228,24 @@ const LogisticsPage = () => {
       </section>
 
       {/* Collaborators */}
-      <section className="py-20 md:py-28 bg-muted/20">
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-6">
-          <h2 className="font-montserrat text-2xl md:text-3xl font-bold text-foreground text-center mb-14 tracking-tight">
+          <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary text-center mb-12">
             {t('designers.collaborators.title')}
           </h2>
-          <div className="flex justify-center items-center gap-8 md:gap-14 flex-wrap">
-            {collaborators.map((collab, i) => (
-              <div
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+            {[
+              { src: logoOcho43, alt: 'Ocho43 Tienda de Diseño' },
+              { src: logoPatriciaMejia, alt: 'Patricia Mejía Diseñadora de Zapatos' },
+              { src: logoArgemiroSierra, alt: 'Argemiro Sierra' },
+              { src: fridaLogo, alt: 'Frida' },
+            ].map((collab, i) => (
+              <img
                 key={i}
-                className={`w-36 h-36 md:w-44 md:h-44 rounded-2xl overflow-hidden shadow-soft border border-border flex items-center justify-center p-5 transition-transform duration-300 hover:scale-105 ${
-                  collab.needsBg ? 'bg-primary' : 'bg-card'
-                }`}
-              >
-                <img src={collab.src} alt={collab.alt} className="w-full h-full object-contain" />
-              </div>
+                src={collab.src}
+                alt={collab.alt}
+                className="h-20 md:h-28 w-auto max-w-[220px] md:max-w-[280px] object-contain"
+              />
             ))}
           </div>
         </div>

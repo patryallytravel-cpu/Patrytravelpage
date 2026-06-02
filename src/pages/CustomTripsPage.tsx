@@ -2,9 +2,23 @@ import { ClipboardList, UserCheck, MapPin } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import CustomTripForm from '@/components/forms/CustomTripForm';
 import ServicesSection from '@/components/custom-trips/ServicesSection';
-import CollaboratorsCarousel from '@/components/custom-trips/CollaboratorsCarousel';
 import { useLanguage } from '@/contexts/LanguageContext';
 import customTripsHero from '@/assets/custom-trips-hero.png';
+
+import logoTribe from '@/assets/logo-tribe.jpeg';
+import logoIbis from '@/assets/logo-ibis.jpeg';
+import logoNovotel from '@/assets/logo-novotel.jpeg';
+import logoFirenze from '@/assets/logo-firenze.jpg';
+import logoBlues from '@/assets/logo-blues.jpg';
+import logoUrbit from '@/assets/logo-urbit.jpg';
+import logoOnce22 from '@/assets/logo-once22.jpg';
+import logoMoa from '@/assets/logo-moa.jpg';
+import logoLaureles from '@/assets/logo-laureles-selection.jpg';
+import logoAccor from '@/assets/logo-accor.jpeg';
+import logoYork from '@/assets/logo york.png';
+import logoDrapastrana from '@/assets/logo-drapastrana.jpeg';
+import logoAntienvejecimiento from '@/assets/logo-antienvejecimiento.png';
+import logoDermavital from '@/assets/Logo-Dermavital.png';
 
 const CustomTripsPage = () => {
   const { t } = useLanguage();
@@ -84,8 +98,148 @@ const CustomTripsPage = () => {
       {/* Services Section */}
       <ServicesSection />
 
-      {/* Collaborators Carousel */}
-      <CollaboratorsCarousel />
+      {/* Collaborators */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-background via-muted/10 to-background">
+        <div className="container mx-auto px-6">
+          {/* Header with decorative line */}
+          <div className="text-center mb-16 md:mb-20">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-secondary" />
+              <h2 className="font-montserrat text-sm md:text-base font-semibold text-secondary tracking-widest uppercase">
+                {t('customTrip.collaborators.title')}
+              </h2>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-secondary" />
+            </div>
+            <h3 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary">
+              Nuestros Aliados
+            </h3>
+          </div>
+
+          {/* Logos container with border */}
+          <div className="max-w-3xl mx-auto">
+            <div className="relative p-12 md:p-16 rounded-3xl border-2 border-secondary/20 bg-card/30 backdrop-blur-sm shadow-lg">
+              {/* Decorative corner accents */}
+              <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-secondary rounded-tl-2xl" />
+              <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-secondary rounded-tr-2xl" />
+              <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-secondary rounded-bl-2xl" />
+              <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-secondary rounded-br-2xl" />
+
+              {/* Logos grid */}
+              <div className="grid grid-cols-4 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
+                {/* First row: Accor, Tribe, Ibis, Novotel */}
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoAccor}
+                    alt="Accor"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoTribe}
+                    alt="Tribe"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoIbis}
+                    alt="Ibis"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoNovotel}
+                    alt="Novotel"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+
+                {/* Second row: Blues, Urbit, Firenze, Laureles */}
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoBlues}
+                    alt="Blue & Suites"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoUrbit}
+                    alt="Urbit"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoFirenze}
+                    alt="FRNZ Lofts"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoLaureles}
+                    alt="Laureles Selection"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+
+                {/* Third row: Once22, MOA, Drapastrana (larger), Antienvejecimiento */}
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoOnce22}
+                    alt="Once 22"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoMoa}
+                    alt="MOA"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+                
+                
+                <div className="col-span-2 flex items-center justify-center p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoYork}
+                    alt="York"
+                    className="h-20 md:h-24 w-auto max-w-[200px] object-contain"
+                  />
+                </div>
+
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoAntienvejecimiento}
+                    alt="Antienvejecimiento"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+
+                {/* Fourth row: Derma Vital, York (centered across 2 cols), gap */}
+                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoDermavital}
+                    alt="Derma Vital"
+                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                  />
+                </div>
+
+                <div className="col-span-1 flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                  <img
+                    src={logoDrapastrana}
+                    alt="Drapastrana"
+                    className="h-24 md:h-28 w-auto max-w-[180px] object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Form Section - Two columns */}
       <section className="py-16 md:py-20 bg-background">
