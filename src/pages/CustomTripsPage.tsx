@@ -115,18 +115,11 @@ const CustomTripsPage = () => {
             </h3>
           </div>
 
-          {/* Logos container with border */}
-          <div className="max-w-4xl mx-auto px-4 sm:px-0">
-            <div className="relative p-6 sm:p-8 md:p-12 lg:p-16 rounded-3xl border-2 border-secondary/20 bg-card/30 backdrop-blur-sm shadow-lg">
-              {/* Decorative corner accents */}
-              <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-secondary rounded-tl-2xl" />
-              <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-secondary rounded-tr-2xl" />
-              <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-secondary rounded-bl-2xl" />
-              <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-secondary rounded-br-2xl" />
-
-              {/* Logos grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center justify-items-center">
-                {/* First row: Accor, Tribe, Ibis, Novotel */}
+          {/* Logos sections */}
+          <div className="max-w-5xl mx-auto space-y-12">
+            {/* Section 1: Accor line */}
+            <div className="max-w-3xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoAccor}
@@ -148,15 +141,19 @@ const CustomTripsPage = () => {
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="hidden sm:flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoNovotel}
                     alt="Novotel"
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
+              </div>
+            </div>
 
-                {/* Second row: Blues, Urbit, Firenze, Laureles */}
+            {/* Section 2: Main partners */}
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoBlues}
@@ -178,15 +175,13 @@ const CustomTripsPage = () => {
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="hidden sm:flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoLaureles}
                     alt="Laureles Selection"
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-
-                {/* Third row: Once22, MOA, York, Antienvejecimiento */}
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoOnce22}
@@ -201,7 +196,6 @@ const CustomTripsPage = () => {
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoYork}
@@ -209,7 +203,6 @@ const CustomTripsPage = () => {
                     className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px] object-contain"
                   />
                 </div>
-
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoAntienvejecimiento}
@@ -217,8 +210,12 @@ const CustomTripsPage = () => {
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
+              </div>
+            </div>
 
-                {/* Fourth row: Derma Vital, Drapastrana */}
+            {/* Section 3: Beauty & Wellness */}
+            <div className="max-w-2xl mx-auto">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoDermavital}
@@ -226,7 +223,6 @@ const CustomTripsPage = () => {
                     className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoDrapastrana}
