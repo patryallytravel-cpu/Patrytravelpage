@@ -116,8 +116,8 @@ const CustomTripsPage = () => {
           </div>
 
           {/* Logos container with border */}
-          <div className="max-w-3xl mx-auto">
-            <div className="relative p-12 md:p-16 rounded-3xl border-2 border-secondary/20 bg-card/30 backdrop-blur-sm shadow-lg">
+          <div className="max-w-4xl mx-auto px-4 sm:px-0">
+            <div className="relative p-6 sm:p-8 md:p-12 lg:p-16 rounded-3xl border-2 border-secondary/20 bg-card/30 backdrop-blur-sm shadow-lg">
               {/* Decorative corner accents */}
               <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-secondary rounded-tl-2xl" />
               <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-secondary rounded-tr-2xl" />
@@ -125,114 +125,113 @@ const CustomTripsPage = () => {
               <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-secondary rounded-br-2xl" />
 
               {/* Logos grid */}
-              <div className="grid grid-cols-4 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center justify-items-center">
                 {/* First row: Accor, Tribe, Ibis, Novotel */}
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoAccor}
                     alt="Accor"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoTribe}
                     alt="Tribe"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoIbis}
                     alt="Ibis"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="hidden sm:flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoNovotel}
                     alt="Novotel"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
 
                 {/* Second row: Blues, Urbit, Firenze, Laureles */}
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoBlues}
                     alt="Blue & Suites"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoUrbit}
                     alt="Urbit"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoFirenze}
                     alt="FRNZ Lofts"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="hidden sm:flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoLaureles}
                     alt="Laureles Selection"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
 
-                {/* Third row: Once22, MOA, Drapastrana (larger), Antienvejecimiento */}
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                {/* Third row: Once22, MOA, York, Antienvejecimiento */}
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoOnce22}
                     alt="Once 22"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoMoa}
                     alt="MOA"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
-                
-                
-                <div className="col-span-2 flex items-center justify-center p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoYork}
                     alt="York"
-                    className="h-20 md:h-24 w-auto max-w-[200px] object-contain"
+                    className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[180px] lg:max-w-[200px] object-contain"
                   />
                 </div>
 
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoAntienvejecimiento}
                     alt="Antienvejecimiento"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
 
-                {/* Fourth row: Derma Vital, York (centered across 2 cols), gap */}
-                <div className="flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                {/* Fourth row: Derma Vital, Drapastrana */}
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoDermavital}
                     alt="Derma Vital"
-                    className="h-16 md:h-20 w-auto max-w-[150px] object-contain"
+                    className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto max-w-[100px] sm:max-w-[130px] md:max-w-[150px] object-contain"
                   />
                 </div>
 
-                <div className="col-span-1 flex items-center justify-center p-2 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
+                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoDrapastrana}
                     alt="Drapastrana"
-                    className="h-24 md:h-28 w-auto max-w-[180px] object-contain"
+                    className="h-14 sm:h-16 md:h-24 lg:h-28 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[180px] object-contain"
                   />
                 </div>
               </div>
