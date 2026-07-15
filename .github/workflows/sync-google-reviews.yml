@@ -1,0 +1,39 @@
+name: Sincronizar reseñas de Google
+
+on:
+  schedule:
+    # Lunes y jueves, 8:00 a.m. hora Medellín (UTC-5 = 13:00 UTC)
+    - cron: '0 13 * * 1,4'
+  workflow_dispatch: {} # permite correrlo manualmente desde la pestaña "Actions"
+
+jobs:
+  sync-reviews:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Clonar repo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Traer reseñas de Google
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          GOOGLE_PLACE_ID: ${{ secrets.GOOGLE_PLACE_ID }}
+        run: node scripts/fetch-google-reviews.mjs
+
+      - name: Commitear cambios (si hay reseñas nuevas)
+        run: |
+          git config user.name "patryally-bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet -- src/data/googleReviews.json; then
+            echo "Sin reseñas nuevas, no hay nada que commitear."
+          else
+            git add src/data/googleReviews.json
+            git commit -m "chore: actualizar reseñas de Google"
+            git push
+          fi
