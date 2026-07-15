@@ -1,7 +1,44 @@
 {
-  "rating": null,
-  "userRatingCount": null,
-  "googleMapsUri": "https://maps.google.com/?cid=4761286656184892246&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
-  "updatedAt": "2026-07-15T15:34:21.296Z",
-  "reviews": []
+  "rating": 5,
+  "userRatingCount": 4,
+  "googleMapsUri": "https://maps.google.com/?cid=3396726243546841323&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "updatedAt": "2026-07-15T16:05:01.537Z",
+  "reviews": [
+    {
+      "id": "Imelda Gomez__2026-07-09T15:20:22.744776657Z",
+      "source": "google",
+      "author": "Imelda Gomez",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJaomZp5tYDUMrgcZgE2MuFeO0VC4sjTzPt8n76-1dBgoYtcw=s128-c0x00000000-cc-rp-mo",
+      "text": "It was a good experience.\nI received excellent service from everyone who transported me and accompanied me to the hospital.\nThank you all.",
+      "rating": 5,
+      "publishTime": "2026-07-09T15:20:22.744776657Z"
+    },
+    {
+      "id": "Andres Felipe Henao Restrepo__2026-07-08T21:12:04.155670047Z",
+      "source": "google",
+      "author": "Andres Felipe Henao Restrepo",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUy3pNW8BCtBCiQLdCgSCz2RKm4nPAnkYro9egrn3ZFX0L3F1W35w=s128-c0x00000000-cc-rp-mo-ba2",
+      "text": "Excellent services",
+      "rating": 5,
+      "publishTime": "2026-07-08T21:12:04.155670047Z"
+    },
+    {
+      "id": "Lourdes V (Lulie)__2026-06-10T19:06:54.205313051Z",
+      "source": "google",
+      "author": "Lourdes V (Lulie)",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIRTw7V9UaYZ_ivCCLniG1uIb-z0ZfUvbag3sLqiPQhnlQ21w=s128-c0x00000000-cc-rp-mo",
+      "text": "Paty offers excellent service, always with warmth and empathy towards her clients' needs. 100% recommended.",
+      "rating": 5,
+      "publishTime": "2026-06-10T19:06:54.205313051Z"
+    },
+    {
+      "id": "Dominic Ríos__2026-06-10T15:37:48.832567663Z",
+      "source": "google",
+      "author": "Dominic Ríos",
+      "authorPhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjUZHbKPzBvpeyhGeUhNLSPpC367s-Z_yhKBnYZl80GUSoZ_Pznd=s128-c0x00000000-cc-rp-mo",
+      "text": "Patry made us feel incredibly guided and supported every step of the way. She was attentive to every detail and kept us updated at all times. Her service was kind and very dedicated. We will definitely continue traveling with her!",
+      "rating": 5,
+      "publishTime": "2026-06-10T15:37:48.832567663Z"
+    }
+  ]
 }
