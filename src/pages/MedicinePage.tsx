@@ -2,7 +2,7 @@ import {
   Stethoscope, Smile, Heart, Activity, Brain, Bone,
   Scan, FlaskConical, Dumbbell, Zap, HeartPulse, Microscope,
   Building2, Award, Users, Shield, CheckCircle2, ArrowRight,
-  MessageCircle
+  MessageCircle, Dna
 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import VipBudgetForm from '@/components/forms/VipBudgetForm';
@@ -18,6 +18,9 @@ import logoSura from '@/assets/logo-sura.png';
 import logoSomer from '../assets/logo-somer.png';
 import LogoMasvida from '../assets/logomasvida.png';
 import logoVumi from '../assets/logo vumi.png';
+import logoBreathe from '@/assets/logo-breathe.png';
+import logoLumm from '@/assets/logo-lumm3.jpeg';
+import logoUroclin from '@/assets/logo-uroclin.png';
 
 const MedicinePage = () => {
   const { t } = useLanguage();
@@ -67,6 +70,12 @@ const MedicinePage = () => {
       titleKey: 'health.masvida',
       descKey: 'health.masvida.desc',
       procedures: ['health.masvida.proc1', 'health.masvida.proc2', 'health.masvida.proc3', 'health.masvida.proc4'],
+    },
+    {
+      icon: Dna,
+      titleKey: 'health.regenerative.title',
+      descKey: 'health.regenerative.desc',
+      procedures: ['health.regenerative.proc1', 'health.regenerative.proc2', 'health.regenerative.proc3', 'health.regenerative.proc4'],
     },
   ];
 
@@ -317,6 +326,9 @@ const MedicinePage = () => {
               { src: logoSomer, alt: 'Clínica Somer' },
               { src: LogoMasvida, alt: 'Mas vida' },
               { src: logoVumi, alt: 'Vumi Travel' },
+              { src: logoBreathe, alt: 'Breathe' },
+              { src: logoLumm, alt: 'Lumm' },
+              { src: logoUroclin, alt: 'Uroclin' },
             ].map((ally, i) => (
               <img
                 key={i}

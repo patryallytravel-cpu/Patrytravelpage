@@ -202,6 +202,12 @@ const translations: Record<Language, Record<string, string>> = {
     'health.masvida.proc3': 'Atención Premium en manejo de aplicación de medicamentos pre y post procedimientos.',
     'health.masvida.proc4': 'Disponibilidad de equipos médicos para recuperación y cuidado integral.',
 
+    'health.regenerative.title': 'Medicina Regenerativa y Longevidad',
+    'health.regenerative.desc': 'Terapias que activan la capacidad de reparación del propio cuerpo, con laboratorio de cultivo celular propio en Medellín.',
+    'health.regenerative.proc1': 'Evaluación de Edad Biológica',
+    'health.regenerative.proc2': 'Regeneración Articular y de Columna sin Cirugía',
+    'health.regenerative.proc3': 'Regeneración Estética de Piel y Cabello',
+    'health.regenerative.proc4': 'Terapia Celular Sistémica',
 
     'health.cta.consult': 'Consultar Especialista',
 
@@ -666,6 +672,13 @@ const translations: Record<Language, Record<string, string>> = {
     'health.dental.proc2': 'Premium Dental Implants',
     'health.dental.proc3': 'Porcelain Veneers',
     'health.dental.proc4': 'Full Oral Rehabilitation',
+
+    'health.regenerative.title': 'Regenerative Medicine and Longevity',
+    'health.regenerative.desc': 'Therapies that activate the body’s own repair capacity, with an in-house cell culture laboratory in Medellín.',
+    'health.regenerative.proc1': 'Biological Age Assessment',
+    'health.regenerative.proc2': 'Joint and Spine Regeneration Without Surgery',
+    'health.regenerative.proc3': 'Aesthetic Skin and Hair Regeneration',
+    'health.regenerative.proc4': 'Systemic Cellular Therapy',
 
     'health.cta.consult': 'Consult Specialist',
 
