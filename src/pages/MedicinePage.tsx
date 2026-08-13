@@ -21,6 +21,7 @@ import logoVumi from '../assets/logo vumi.png';
 import logoBreathe from '@/assets/logo-breathe.png';
 import logoLumm from '@/assets/logo-lumm3.jpeg';
 import logoUroclin from '@/assets/logo-uroclin.png';
+import logoclinicasomos from '@/assets/logo-clinicasomos.png';
 
 const MedicinePage = () => {
   const { t } = useLanguage();
@@ -329,6 +330,7 @@ const MedicinePage = () => {
               { src: logoBreathe, alt: 'Breathe' },
               { src: logoLumm, alt: 'Lumm' },
               { src: logoUroclin, alt: 'Uroclin' },
+              { src: logoclinicasomos, alt: 'Clínica Somos' },
             ].map((ally, i) => (
               <img
                 key={i}

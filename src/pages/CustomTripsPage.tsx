@@ -19,8 +19,6 @@ import logoYork from '@/assets/logo york.png';
 import logoDrapastrana from '@/assets/logo-drapastrana.jpeg';
 import logoAntienvejecimiento from '@/assets/logo-antienvejecimiento.png';
 import logoDermavital from '@/assets/Logo-Dermavital.png';
-import logoclinicasomos from '@/assets/logo-clinicasomos.png';
-
 
 const CustomTripsPage = () => {
   const { t } = useLanguage();
@@ -217,7 +215,7 @@ const CustomTripsPage = () => {
 
             {/* Section 3: Beauty & Wellness */}
             <div className="max-w-2xl mx-auto">
-              <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center justify-items-center">
                 <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
                   <img
                     src={logoDermavital}
@@ -229,13 +227,6 @@ const CustomTripsPage = () => {
                   <img
                     src={logoDrapastrana}
                     alt="Drapastrana"
-                    className="h-14 sm:h-16 md:h-24 lg:h-28 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[180px] object-contain"
-                  />
-                </div>
-                <div className="flex items-center justify-center p-2 sm:p-3 rounded-xl hover:bg-secondary/5 transition-all duration-300 hover:scale-110">
-                  <img
-                    src={logoclinicasomos}
-                    alt="Clínica Somos"
                     className="h-14 sm:h-16 md:h-24 lg:h-28 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[180px] object-contain"
                   />
                 </div>
