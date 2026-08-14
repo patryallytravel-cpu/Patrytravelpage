@@ -33,6 +33,10 @@ const Navbar = () => {
     setLanguage(language === 'es' ? 'en' : 'es');
   };
 
+  const whatsappHref = `https://wa.me/573006247456?text=${encodeURIComponent(
+    'Hola Patry Ally, me gustaría solicitar una valoración.'
+  )}`;
+
   return (
     <nav
       className={cn(
@@ -97,11 +101,13 @@ const Navbar = () => {
               <Globe className="h-4 w-4" />
               <span className="font-medium">{language.toUpperCase()}</span>
             </Button>
-            <Button 
-              asChild 
+            <Button
+              asChild
               className="rounded-full px-6 bg-secondary hover:bg-secondary/90 text-white"
             >
-              <Link to="/#contacto">{t('nav.cta')}</Link>
+              <a href={whatsappHref} target="_blank" rel="noopener noreferrer">
+                {t('nav.cta')}
+              </a>
             </Button>
           </div>
 
@@ -148,13 +154,18 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Button 
-              asChild 
+            <Button
+              asChild
               className="mt-4 rounded-full bg-secondary hover:bg-secondary/90 text-white"
             >
-              <Link to="/#contacto" onClick={() => setIsOpen(false)}>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+              >
                 {t('nav.cta')}
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
