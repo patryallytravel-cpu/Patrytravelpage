@@ -16,9 +16,16 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    setIsOpen(false);
+    setIsScrolled(window.scrollY > 20);
+  }, [location.pathname]);
 
   const navLinks = [
     { href: '/', label: t('nav.home') },
@@ -40,10 +47,10 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        'fixed left-0 right-0 z-50 transition-all duration-500',
-        isScrolled 
-          ? 'top-0 bg-primary shadow-lg py-2' 
-          : '-top-20 bg-transparent py-0'
+        'fixed left-0 right-0 top-0 z-50 transition-all duration-500',
+        isScrolled
+          ? 'bg-primary/95 shadow-lg py-2 backdrop-blur-md'
+          : 'bg-transparent py-3'
       )}
     >
       <div className="container mx-auto px-6">
@@ -54,10 +61,8 @@ const Navbar = () => {
               src={logoPatryally} 
               alt="Patry Ally" 
               className={cn(
-                "transition-all duration-500 brightness-0 invert drop-shadow-[0_0_35px_rgba(255,255,255,0.9)] group-hover:drop-shadow-[0_0_50px_rgba(255,255,255,1)] group-hover:scale-110 group-hover:rotate-1 animate-fly-in",
-                isScrolled 
-                  ? "h-16 md:h-20" 
-                  : "h-52 md:h-64 mt-8"
+                "transition-all duration-500 brightness-0 invert drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] group-hover:scale-105 animate-fly-in",
+                "h-12 md:h-14 w-auto"
               )}
             />
           </Link>
@@ -73,9 +78,7 @@ const Navbar = () => {
                   'after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-secondary after:transition-all after:duration-500 hover:after:w-full',
                   'before:absolute before:inset-0 before:bg-white/10 before:rounded-lg before:scale-0 before:transition-transform before:duration-300 hover:before:scale-100',
                   'hover:-translate-y-1 hover:scale-110 hover:text-secondary',
-                  isScrolled 
-                    ? 'text-white' 
-                    : 'text-white',
+                  'text-white',
                   location.pathname === link.href && 'text-secondary after:w-full'
                 )}
                 style={{ 
