@@ -15,7 +15,6 @@ import logoPatriciaMejia from '@/assets/LOGO NEGRO PATRICIA MEJIA DISEÑADORA D
 import logoArgemiroSierra from '@/assets/logo-argemiro-sierra.png';
 import fridaLogo from '@/assets/frida-logo.png';
 import logoYork from '../assets/logo york.png';
-
 /**holaaddda */
 
 // Fashion photos
@@ -238,8 +237,7 @@ const LogisticsPage = () => {
               { src: logoOcho43, alt: 'Ocho43 Tienda de Diseño' },
               { src: logoPatriciaMejia, alt: 'Patricia Mejía Diseñadora de Zapatos' },
               { src: logoArgemiroSierra, alt: 'Argemiro Sierra' },
-              { src: fridaLogo, alt: 'Frida' },
-            ].map((collab, i) => (
+              { src: fridaLogo, alt: 'Frida' },            ].map((collab, i) => (
               <img
                 key={i}
                 src={collab.src}

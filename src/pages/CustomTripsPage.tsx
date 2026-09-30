@@ -19,7 +19,6 @@ import logoYork from '@/assets/logo york.png';
 import logoDrapastrana from '@/assets/logo-drapastrana.jpeg';
 import logoAntienvejecimiento from '@/assets/logo-antienvejecimiento.png';
 import logoDermavital from '@/assets/Logo-Dermavital.png';
-
 const CustomTripsPage = () => {
   const { t } = useLanguage();
 
@@ -229,8 +228,7 @@ const CustomTripsPage = () => {
                     alt="Drapastrana"
                     className="h-14 sm:h-16 md:h-24 lg:h-28 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[180px] object-contain"
                   />
-                </div>
-              </div>
+                </div>              </div>
             </div>
           </div>
         </div>

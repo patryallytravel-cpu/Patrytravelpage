@@ -3,7 +3,6 @@ import clusterTurismoNegocios from '@/assets/cluster-turismo-negocios.png';
 import redClusterColombia from '@/assets/red-cluster-colombia.png';
 import alcaldiaMedellin from '@/assets/alcaldia-medellin.png';
 import suraLogo from '@/assets/sura-logo.png';
-
 const partners = [
 { src: clusterTurismoNegocios, alt: 'Cluster Turismo de Negocios Medellín y Antioquia', className: '' },
 { src: redClusterColombia, alt: 'Red Cluster Colombia', className: 'scale-75' },

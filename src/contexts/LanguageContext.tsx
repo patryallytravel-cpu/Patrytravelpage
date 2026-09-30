@@ -366,6 +366,11 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.message': 'Cuéntanos sobre tu viaje ideal',
     'footer.send': 'Enviar',
     'footer.rights': 'Todos los derechos reservados',
+    'footer.city.label': 'Medellín',
+    'footer.city.desc': 'La ciudad de la eterna primavera, donde tu bienestar y tu viaje florecen juntos.',
+    'footer.city.health': 'Salud',
+    'footer.city.culture': 'Cultura',
+    'footer.city.nature': 'Naturaleza',
     
     // Testimonials
     'testimonials.title': 'Lo Que Dicen Nuestros Clientes',
@@ -844,6 +849,11 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.message': 'Tell us about your ideal trip',
     'footer.send': 'Send',
     'footer.rights': 'All rights reserved',
+    'footer.city.label': 'Medellín',
+    'footer.city.desc': 'The city of eternal spring, where your well-being and your journey bloom together.',
+    'footer.city.health': 'Health',
+    'footer.city.culture': 'Culture',
+    'footer.city.nature': 'Nature',
     
     // Testimonials
     'testimonials.title': 'What Our Clients Say',

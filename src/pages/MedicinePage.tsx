@@ -21,8 +21,10 @@ import logoVumi from '../assets/logo vumi.png';
 import logoBreathe from '@/assets/logo-breathe.png';
 import logoLumm from '@/assets/logo-lumm3.jpeg';
 import logoUroclin from '@/assets/logo-uroclin.png';
-import logoclinicasomos from '@/assets/logo-clinicasomos.png';
+import logoclinicasomos from '@/assets/logo-clinicasomos-trim.png';
 import logoVid from '@/assets/logo-vid.png';
+import logoQuiron from '@/assets/logo-clinica-quiron.png';
+import logoColoproctologia from '@/assets/logo-coloproctologia.png';
 
 const MedicinePage = () => {
   const { t } = useLanguage();
@@ -333,7 +335,8 @@ const MedicinePage = () => {
               { src: logoUroclin, alt: 'Uroclin' },
               { src: logoclinicasomos, alt: 'Clínica Somos' },
               { src: logoVid, alt: 'VID' },
-            ].map((ally, i) => (
+              { src: logoQuiron, alt: 'Clínica Medellín - Grupo Quirónsalud' },
+              { src: logoColoproctologia, alt: 'Instituto de Coloproctología' },            ].map((ally, i) => (
               <img
                 key={i}
                 src={ally.src}
