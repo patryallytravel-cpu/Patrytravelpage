@@ -23,8 +23,15 @@ import logoLumm from '@/assets/logo-lumm3.jpeg';
 import logoUroclin from '@/assets/logo-uroclin.png';
 import logoclinicasomos from '@/assets/logo-clinicasomos-trim.png';
 import logoVid from '@/assets/logo-vid.png';
-import logoQuiron from '@/assets/logo-clinica-quiron.png';
 import logoColoproctologia from '@/assets/logo-coloproctologia.png';
+import logoQuironImbanaco from '@/assets/logos quiron/clinica imbanaco quiron 2.png';
+import logoQuironMedellin from '@/assets/logos quiron/clinica medellin quiron 2.png';
+import logoQuironOncologico from '@/assets/logos quiron/centro oncologico quiron 2.png';
+import logoQuironClofan from '@/assets/logos quiron/clinica clofan quiron 2.png';
+import logoQuironMujer from '@/assets/logos quiron/clinica de la mujer quiron 2.png';
+import logoQuironPrado from '@/assets/logos quiron/clinica de prado quiron 2.png';
+import logoQuironLasVegas from '@/assets/logos quiron/clinica las vegas quiron 2.png';
+import logoQuironCedimed from '@/assets/logos quiron/diagnostico cedimed quiron 2.png';
 
 const MedicinePage = () => {
   const { t } = useLanguage();
@@ -335,7 +342,6 @@ const MedicinePage = () => {
               { src: logoUroclin, alt: 'Uroclin' },
               { src: logoclinicasomos, alt: 'Clínica Somos' },
               { src: logoVid, alt: 'VID' },
-              { src: logoQuiron, alt: 'Clínica Medellín - Grupo Quirónsalud' },
               { src: logoColoproctologia, alt: 'Instituto de Coloproctología' },            ].map((ally, i) => (
               <img
                 key={i}
@@ -343,6 +349,57 @@ const MedicinePage = () => {
                 alt={ally.alt}
                 className="h-20 md:h-28 w-auto max-w-[220px] md:max-w-[280px] object-contain"
               />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Aliados Quirón */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
+              {t('health.alliesQuiron.label')}
+            </span>
+            <h2 className="font-montserrat text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary mb-6">
+              {t('health.alliesQuiron.title')}
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              {t('health.alliesQuiron.subtitle')}
+            </p>
+          </div>
+
+          {/* Aliado destacado: Clínica Imbanaco */}
+          <div className="flex justify-center mb-8 md:mb-10">
+            <div className="w-full max-w-sm md:max-w-md bg-white rounded-3xl border border-accent/30 shadow-[0_12px_40px_-12px_rgba(13,175,165,0.35)]">
+              <img
+                src={logoQuironImbanaco}
+                alt="Clínica Imbanaco - Grupo Quirónsalud"
+                className="w-full aspect-[2/1] object-contain"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6 max-w-6xl mx-auto">
+            {[
+              { src: logoQuironMedellin, alt: 'Clínica Medellín - Grupo Quirónsalud' },
+              { src: logoQuironOncologico, alt: 'Centro Oncológico de Antioquia - Grupo Quirónsalud' },
+              { src: logoQuironLasVegas, alt: 'Clínica Las Vegas - Grupo Quirónsalud' },
+              { src: logoQuironPrado, alt: 'Clínica del Prado - Grupo Quirónsalud' },
+              { src: logoQuironMujer, alt: 'Clínica de la Mujer - Grupo Quirónsalud' },
+              { src: logoQuironClofan, alt: 'Clínica Clofan - Grupo Quirónsalud' },
+              { src: logoQuironCedimed, alt: 'Cedimed - Grupo Quirónsalud' },
+            ].map((ally, i) => (
+              <div
+                key={i}
+                className="w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] bg-white rounded-2xl border border-border"
+              >
+                <img
+                  src={ally.src}
+                  alt={ally.alt}
+                  className="w-full aspect-[2/1] object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>

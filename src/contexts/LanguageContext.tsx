@@ -250,6 +250,9 @@ const translations: Record<Language, Record<string, string>> = {
     'health.routes.item3': 'Evaluación integral de salud en 48 horas',
     'health.routes.time': 'Resultados completos',
     'health.allies.title': 'Aliados',
+    'health.alliesQuiron.label': 'Grupo Quirónsalud',
+    'health.alliesQuiron.title': 'Aliados Quirón',
+    'health.alliesQuiron.subtitle': 'Una red de clínicas y centros de excelencia del Grupo Quirónsalud que respaldan cada uno de nuestros procesos médicos.',
 
 
     
@@ -733,6 +736,9 @@ const translations: Record<Language, Record<string, string>> = {
     'health.routes.item3': 'Comprehensive health evaluation in 48 hours',
     'health.routes.time': 'Complete results',
     'health.allies.title': 'Allies',
+    'health.alliesQuiron.label': 'Quirónsalud Group',
+    'health.alliesQuiron.title': 'Quirón Allies',
+    'health.alliesQuiron.subtitle': 'A network of Quirónsalud Group clinics and centers of excellence backing every one of our medical processes.',
 
 
     
