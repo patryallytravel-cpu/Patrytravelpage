@@ -369,19 +369,9 @@ const MedicinePage = () => {
             </p>
           </div>
 
-          {/* Aliado destacado: Clínica Imbanaco */}
-          <div className="flex justify-center mb-8 md:mb-10">
-            <div className="w-full max-w-sm md:max-w-md bg-white rounded-3xl border border-accent/30 shadow-[0_12px_40px_-12px_rgba(13,175,165,0.35)]">
-              <img
-                src={logoQuironImbanaco}
-                alt="Clínica Imbanaco - Grupo Quirónsalud"
-                className="w-full aspect-[2/1] object-contain"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4 md:gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
             {[
+              { src: logoQuironImbanaco, alt: 'Clínica Imbanaco - Grupo Quirónsalud' },
               { src: logoQuironMedellin, alt: 'Clínica Medellín - Grupo Quirónsalud' },
               { src: logoQuironOncologico, alt: 'Centro Oncológico de Antioquia - Grupo Quirónsalud' },
               { src: logoQuironLasVegas, alt: 'Clínica Las Vegas - Grupo Quirónsalud' },
@@ -392,7 +382,7 @@ const MedicinePage = () => {
             ].map((ally, i) => (
               <div
                 key={i}
-                className="w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] bg-white rounded-2xl border border-border"
+                className="bg-white rounded-2xl border border-border"
               >
                 <img
                   src={ally.src}

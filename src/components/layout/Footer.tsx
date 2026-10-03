@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Mail, MapPin, Linkedin, Facebook, Smartphone, Phone, HeartPulse, Palette, Leaf } from 'lucide-react';
+import { Instagram, Mail, MapPin, Linkedin, Facebook, Smartphone, Phone } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,7 +8,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import logoWatermark from '@/assets/logo-watermark.png';
 import footerBg from '@/assets/footer-bg.png';
-import medellinFlorece from '@/assets/medellin-florece-2.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -119,38 +118,6 @@ const Footer = () => {
                 {isSubmitting ? '...' : t('footer.send')}
               </Button>
             </form>
-
-            {/* Destino Medellín */}
-            <div className="relative z-10 mt-10 pt-10 border-t border-background/10">
-              <div className="flex items-center gap-5">
-                <img
-                  src={medellinFlorece}
-                  alt="Medellín, aquí todo florece"
-                  className="h-24 md:h-28 w-auto flex-shrink-0 rounded-2xl shadow-lg shadow-black/30 ring-1 ring-background/20" />
-                <div>
-                  <span className="block text-xs font-semibold tracking-widest uppercase text-secondary mb-2">
-                    {t('footer.city.label')}
-                  </span>
-                  <p className="text-sm text-background/70 leading-relaxed max-w-xs">
-                    {t('footer.city.desc')}
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-2 mt-5">
-                {[
-                  { icon: HeartPulse, label: t('footer.city.health') },
-                  { icon: Palette, label: t('footer.city.culture') },
-                  { icon: Leaf, label: t('footer.city.nature') },
-                ].map(({ icon: Icon, label }) => (
-                  <span
-                    key={label}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-background/20 bg-background/10 px-3 py-1 text-xs text-background/80">
-                    <Icon className="h-3.5 w-3.5 text-secondary" />
-                    {label}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Info */}
