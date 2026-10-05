@@ -1,5 +1,3 @@
-
-xzx
 // Trae las reseñas de Google del Perfil de Empresa y las guarda en
 // src/data/googleReviews.json. Pensado para correr desde GitHub Actions
 // dos veces por semana (ver .github/workflows/sync-google-reviews.yml),
