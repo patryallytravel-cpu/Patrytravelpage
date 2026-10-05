@@ -22,7 +22,7 @@ import logoBreathe from '@/assets/logo-breathe.png';
 import logoLumm from '@/assets/logo-lumm3.jpeg';
 import logoUroclin from '@/assets/logo-uroclin.png';
 import logoclinicasomos from '@/assets/logo-clinicasomos-trim.png';
-import logoVid from '@/assets/logo-vid.png';
+import logoCardioVid from '@/assets/ClinicaCardioVID fondoblanco.png';
 import logoColoproctologia from '@/assets/logo-coloproctologia.png';
 import logoQuironImbanaco from '@/assets/logos quiron/clinica imbanaco quiron 2.png';
 import logoQuironMedellin from '@/assets/logos quiron/clinica medellin quiron 2.png';
@@ -341,13 +341,13 @@ const MedicinePage = () => {
               { src: logoLumm, alt: 'Lumm' },
               { src: logoUroclin, alt: 'Uroclin' },
               { src: logoclinicasomos, alt: 'Clínica Somos' },
-              { src: logoVid, alt: 'VID' },
+              { src: logoCardioVid, alt: 'Clínica CardioVID - Congregación Mariana', className: 'scale-[1.35]' },
               { src: logoColoproctologia, alt: 'Instituto de Coloproctología' },            ].map((ally, i) => (
               <img
                 key={i}
                 src={ally.src}
                 alt={ally.alt}
-                className="h-20 md:h-28 w-auto max-w-[220px] md:max-w-[280px] object-contain"
+                className={cn("h-20 md:h-28 w-auto max-w-[220px] md:max-w-[280px] object-contain", ally.className)}
               />
             ))}
           </div>

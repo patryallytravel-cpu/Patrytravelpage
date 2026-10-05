@@ -87,40 +87,6 @@ const WhoWeAreSection = () => {
                 </div>
               ))}
             </div>
-
-            {/* Destino Medellín */}
-            <div className="bg-card rounded-3xl p-6 md:p-8 border border-border shadow-soft">
-              <div className="flex items-center gap-5">
-                <img
-                  src={medellinFlorece}
-                  alt="Medellín, aquí todo florece"
-                  className="h-24 md:h-28 w-auto flex-shrink-0 rounded-2xl shadow-md"
-                />
-                <div>
-                  <span className="block text-xs font-semibold tracking-widest uppercase text-secondary mb-2">
-                    {t('footer.city.label')}
-                  </span>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t('footer.city.desc')}
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-2 mt-5">
-                {[
-                  { icon: HeartPulse, label: t('footer.city.health') },
-                  { icon: Palette, label: t('footer.city.culture') },
-                  { icon: Leaf, label: t('footer.city.nature') },
-                ].map(({ icon: Icon, label }) => (
-                  <span
-                    key={label}
-                    className="inline-flex items-center gap-1.5 rounded-full border border-border bg-primary/5 px-3 py-1 text-xs font-medium text-foreground/80"
-                  >
-                    <Icon className="h-3.5 w-3.5 text-secondary" />
-                    {label}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
@@ -181,6 +147,40 @@ const WhoWeAreSection = () => {
             <p className="text-muted-foreground leading-relaxed text-lg">
               {t('whoweare.mission.desc')}
             </p>
+          </div>
+        </div>
+
+        {/* Destino Medellín */}
+        <div className="max-w-4xl mx-auto mt-8">
+          <div className="bg-card rounded-3xl p-6 md:p-8 border border-border shadow-soft flex flex-col sm:flex-row items-center gap-6 md:gap-8 text-center sm:text-left">
+            <img
+              src={medellinFlorece}
+              alt="Medellín, aquí todo florece"
+              className="h-32 md:h-36 w-auto flex-shrink-0 rounded-2xl shadow-md"
+            />
+            <div>
+              <span className="block text-xs font-semibold tracking-widest uppercase text-secondary mb-2">
+                {t('footer.city.label')}
+              </span>
+              <p className="text-muted-foreground leading-relaxed text-lg">
+                {t('footer.city.desc')}
+              </p>
+              <div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-5">
+                {[
+                  { icon: HeartPulse, label: t('footer.city.health') },
+                  { icon: Palette, label: t('footer.city.culture') },
+                  { icon: Leaf, label: t('footer.city.nature') },
+                ].map(({ icon: Icon, label }) => (
+                  <span
+                    key={label}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-border bg-primary/5 px-3 py-1 text-xs font-medium text-foreground/80"
+                  >
+                    <Icon className="h-3.5 w-3.5 text-secondary" />
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
